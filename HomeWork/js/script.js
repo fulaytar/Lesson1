@@ -107,3 +107,108 @@ console.log(details[code]);
 } */
 
 //Ваші курс неймовірний!!!
+
+// Якщо змінна більше нуля - виведіть true, менше - false
+//Перевірте це на варіантах  1, 0, -3.
+
+//======Рішення 11=====
+/* const inputValue = prompt("Please enter value");
+if (!isNaN(inputValue)) {
+    const result = inputValue > 0;
+    alert(`Ваше значення = ${result}`);
+}
+else {
+     alert("Ви увели інваліда")
+} */
+
+
+// Якщо змінна ="test" - виведіть true,
+//Перевірте це на варіантах  'test', "qwerty", true
+
+//======Рішення 11=====
+/* const inputValue = prompt("Please enter value");
+inputValue === "test" ? alert(true) : alert(false); */
+
+// Якщо змінна більше 10 -  відніміть 5,
+//менше - додайте 5, результат виведіть в консоль
+//Перевірте це на варіантах  1, 10, 13.
+
+//======Рішення 11=====
+/* let inputValue = prompt("Уведи значення");
+inputValue = Number(inputValue);
+if (inputValue > 10) {
+    inputValue -= 5;
+    console.log(inputValue);
+} else {
+    inputValue += 5;
+    console.log(inputValue);
+}
+alert(inputValue); */
+
+//Зробіть сервіс який отримує число від 1 до 12
+// виведіть місяць який дорівнює числу
+
+//======Рішення 12=====
+/* let inputValue = prompt("Уведи значення місяця");
+inputValue = Number(inputValue);
+if (inputValue > 0 || inputValue <= 12) {
+    switch (inputValue) {
+        case 1:
+            alert("Січень")
+            break;
+        case 2:
+            alert("Лютий")
+            break;
+        case 3:
+            alert("Березень")
+            break;
+        case 4:
+            alert("Квітень")
+            break;
+        case 5:
+            alert("Травень")
+            break;
+        case 6:
+            alert("Червень")
+            break;
+        case 7:
+            alert("Липень")
+            break;
+        case 8:
+            alert("Серпень")
+            break;
+        case 9:
+            alert("Вересень")
+            break;
+        case 10:
+            alert("Жовтень")
+            break;
+        case 11:
+            alert("Листопад")
+            break;
+        case 12:
+            alert("Грудень")
+            break;
+        default: alert("Усього є тільки 12 місяців");
+            break;
+    }
+} else{
+alert("Ви увели фігню")
+} */
+
+//Зробіть сервіс який отримує тризначне число
+//Поверніть користувачу сумму цих чисел
+
+//======Рішення 13=====
+/* let inputValue = prompt("Уведи трицифрове число");
+inputValue = Number(inputValue);
+if (inputValue > 99 && inputValue <= 999) {
+    const firstNumber = Math.floor(inputValue / 100);
+    const secondNumber = Math.floor((inputValue % 100) / 10);
+    const thirdNumber = inputValue % 10;
+    const sumNumber = firstNumber + secondNumber + thirdNumber;
+    console.log(sumNumber);
+    alert(`Сума чисел буде ${sumNumber}`);
+} else {
+    alert("Можна вводити тільки трицифрове число");
+} */
