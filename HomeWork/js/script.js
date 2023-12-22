@@ -212,3 +212,104 @@ if (inputValue > 99 && inputValue <= 999) {
 } else {
     alert("Можна вводити тільки трицифрове число");
 } */
+
+
+//======Рішення 14=====
+// У вас є масив об’єктів fruts, і в кожному з них є name
+// Напишіть код, який перетворює їх в масив імен.
+/*  const fruts = [
+ { id: 0, name: "Apple" },
+ { id: 1, name: "Tomat" },
+ { id: 2, name: "Cherry" },
+ { id: 3, name: "Orange" },
+]; */
+
+//======Задача 14=====
+/* const namesArray = fruts.map(frut => frut.name);
+console.log(namesArray); */
+
+//======Рішення 14(1)=====
+/* let result = [];
+for (let i = 0; i < fruts.length; i++){
+    result.push(fruts[i].name)
+}
+console.log(result) */
+
+//======Рішення 14(2)=====
+//Виведіть парні числа від 2 до 10, використовуючи цикл for.
+// -- 3 --
+
+
+//======Задача 15=====
+//Замініть цикл "for" на "while"
+// for (let i = 0; i < 5; i++) {
+// console.lpg( `цифра ${i}!` );
+// }
+
+//======Рішення 15(1)=====
+/* let numbr = 2;
+while (numbr <11) {
+    console.log(numbr);
+    numbr++;
+} 
+*/
+
+//======Рішення 15(2)=====
+/* let numbr = 2;
+let str = "Початок з"
+while (numbr<11) {
+    str += ` ${numbr}`;
+    if (numbr === 10) {
+        str +=" до кінця.";
+    }
+    numbr++
+}
+console.log(str) */
+
+//======Задача 16=====
+
+//Напишіть цикл, який пропонує prompt ввести число більше за 100.
+//Якщо відвідувач введе менше число – попросити ввести ще раз, і так далі.
+//Цикл повинен запитувати число доти, доки відвідувач не введе число,
+// більше за 100, або не скасує ввід/введе порожній рядок.
+
+//======Рішення 16=====
+
+/* let userInput;
+
+do {
+  userInput = prompt("Введіть число більше за 100:", "");
+  if (userInput === null || userInput === "") {
+    alert("Ви відмовились або ввели порожній рядок.");
+    continue;
+  }
+  if (typeof userInput !== 'string') {
+    alert("Будь ласка, введіть коректне значення у вигляді рядка.");
+    continue;
+  }
+  userInput = Number(userInput);
+
+  if (isNaN(userInput) || userInput <= 100) {
+    alert("Будь ласка, введіть коректне число більше за 100.");
+  }
+} while (isNaN(userInput) || userInput <= 100);
+ */
+
+//======Задача 17=====
+// Вирахуйте середній вік
+
+/* const girls = [
+{ age: 23, name: "Оля" },
+{ age: 29, name: "Аня" },
+{ age: 10, name: "Юля" },
+{ age: 20, name: "Катя"},
+]; */
+
+//======Рішення 17=====
+
+/* let sum = 0;
+for (let i = 0; i < girls.length; i++) {
+  sum+=girls[i].age;
+}
+const result = sum / girls.length;
+console.log(result); */
