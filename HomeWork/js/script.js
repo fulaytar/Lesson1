@@ -313,3 +313,7 @@ for (let i = 0; i < girls.length; i++) {
 }
 const result = sum / girls.length;
 console.log(result); */
+
+
+// toSorted для рядків,  за алфавітом , та проти=)
+
